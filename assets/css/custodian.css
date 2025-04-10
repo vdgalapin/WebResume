@@ -1,0 +1,201 @@
+
+.water {
+    position: absolute;
+    width: 145px;
+    height: 100px;
+    background: blue;
+    left: 21%;
+    top: 36%;
+    animation: water_swing 3s ease-in-out infinite;
+  }
+  
+  .mop1 {
+    position: absolute;
+    width: 50px;
+    height: 17px;
+    background: gray;
+    border-radius: 10%;
+    left: 59%;
+    top: 64%;
+    border: 1px solid darkgray;
+    animation: side_side_mop_1 3s ease-in-out infinite;
+  }
+  .mop2 {
+    position: absolute;
+    width: 90px;
+    height: 17px;
+    background: gray;
+    border-radius: 17%;
+    left: 43%;
+    top: 71%;
+    border: 1px solid darkgray;
+    animation: side_side_mop_2 3s ease-in-out infinite;
+  }
+  .mop3 {
+    position: absolute;
+    width: 110px;
+    height: 17px;
+    background: gray;
+    border-radius: 17%;
+    left: 35%;
+    top: 77%;
+    border: 1px solid darkgray;
+    animation: side_side_mop_3 3s ease-in-out infinite;
+  }
+  .stick {
+    position: absolute;
+    width: 25px;
+    height: 100px;
+    background: black;
+    border-radius: 17%;
+    left: 63%;
+    top: 14%;
+    animation: side_side_stick 3s ease-in-out infinite;
+  }
+  
+  .bucket {
+    position: absolute;
+    width: 180px;
+    height: 160px;
+    border: 18px solid black;
+    border-top: none;
+    border-radius: 0 0 10% 10% ;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .soap {
+    position: absolute;
+    width: 145px;
+    height: 15px;
+    background: whitesmoke;
+    left: 21%;
+    top: 30%;
+    opacity: 0.3;
+    animation: water_swing 3s ease-in-out infinite;
+  }
+  
+  @keyframes side_side_mop_1 {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    25% {
+      transform: translate(-50px, 0px);
+    }
+    50% {
+      transform: translate(-95px, 0px);
+    }
+    75% {
+      transform: translate(-50px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  @keyframes side_side_mop_2 {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    25% {
+      transform: translate(-35px, 0px);
+    }
+    50% {
+      transform: translate(-55px, 0px);
+    }
+    75% {
+      transform: translate(-35px, 0px);
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  @keyframes side_side_mop_3 {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    25% {
+      transform: translate(-20px, 0px);
+    }
+    50% {
+      transform: translate(-35px, 0px);
+    }
+    75% {
+      transform: translate(-20px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  @keyframes side_side_stick {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    25% {
+      transform: translate(-50px, 0px);
+    }
+    50% {
+      transform: translate(-95px, 0px);
+    }
+    75% {
+      transform: translate(-50px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  @keyframes water_swing {
+    0% {
+        transform-origin: bottom; /* Scale from the top */
+      transform: scaleY(1.1);
+    }
+    25% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform-origin: bottom; /* Scale from the top */
+      transform: scaleY(1.1);
+    }
+    75% {
+      transform: scale(1, 1);
+    }
+    100% {
+        transform-origin: bottom; /* Scale from the top */
+      transform: scaleY(1.1);
+    }
+  }
+  
+  /* .mop-strands {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .mop-strands div {
+    width: 4px;
+    height: 80px;
+    margin: 1px;
+    background: linear-gradient(to bottom, #ccc, #888);
+    border-radius: 2px;
+    animation: sway 2s infinite ease-in-out alternate;
+  }
+  
+  @keyframes sway {
+    0% { transform: rotate(4deg); }
+    25% {transform: rotate(2deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-2deg);}
+    100% { transform: rotate(-4deg); }
+  } */

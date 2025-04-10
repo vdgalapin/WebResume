@@ -1,0 +1,70 @@
+
+.flag {
+    position: relative;
+    width: 815px;
+    height: 70vh;
+    aspect-ratio: 1.9 / 1;
+    overflow: hidden;
+    border: 2px solid #000;
+    transform-style: preserve-3d;
+    animation: wave 3s infinite linear;
+  }
+  
+  @keyframes wave {
+    0% { transform: perspective(800px) rotateY(0deg) translateZ(0); }
+    50% { transform: perspective(800px) rotateY(3deg) translateZ(5px); }
+    100% { transform: perspective(800px) rotateY(0deg) translateZ(0); }
+  }
+  
+  .stripe {
+    position: absolute;
+    height: calc(100% / 13);
+    width: 100%;
+    background: red;
+    animation: moveStripe 3s linear infinite;
+  }
+  
+  .stripe:nth-child(even) {
+    background: white;
+  }
+  
+  @keyframes moveStripe {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .canton {
+    background: navy;
+    position: absolute;
+    width: 50%;
+    height: calc(7 / 13 * 100%);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    padding: 5px;
+  }
+  
+  .star {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards, starFloat 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  @keyframes starFloat {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-1px); }
+  }
+  
+  @media (min-width: 500px) {
+    .star {
+      font-size: 16px;
+    }
+  }
+  

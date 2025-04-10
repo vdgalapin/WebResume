@@ -1,0 +1,105 @@
+#logo_div {
+  width: 250px;
+  border-radius: 10px;
+  background: #1c1c1c;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.logo {
+  position: relative;
+  width: 250px;
+  height: 200px;
+}
+
+
+
+.bell {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #9400d3;
+    border-radius: 50% 50% 0 0;
+    left: 30%;
+    top: 31%;
+    /* transform: translate(-50%, -60%) rotate(-20deg); */
+    z-index: 2;
+    animation: swing 4s ease-in-out infinite;
+  }
+  
+  .clapper {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #ff2b70;
+    border-radius: 50%;
+    left: 43%;
+    top: 25%;
+    /* transform: translateX(-50%); */
+    animation: swing_bell 4s ease-in-out infinite;
+  }
+  
+  .arch {
+    position: absolute;
+    width: 180px;
+    height: 170px;
+    border: 18px solid #9400d3;
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes swing {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(15deg);
+    }
+    38% {
+      transform: rotate(8deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    63% {
+        transform: rotate(-8deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes swing_bell {
+    0% {
+      transform: translate(0px, 100px);
+    }
+    25% {
+      transform: translate(-40px, 80px);
+    }
+    50% {
+      transform: translate(0px, 100px);
+    }
+    75% {
+      transform: translate(40px, 80px);
+    }
+  
+    100% {
+      transform: translate(0px, 100px);
+    }
+  }
+  
+  
