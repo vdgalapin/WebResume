@@ -1,22 +1,19 @@
 
-body { background-color: #2F4F4F; }
+body { 
+  background-color: #2F4F4F; 
+}
 
 /* BEGINNING HEADER STYLE */
-#header-nav { /* Header Style*/
+#header-nav { 
 	background-color: #008080;
-	border-radius: 0;
+	/* border-radius: 0; */
 	border:  0;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-#me-img { /* Picture of Me */
-	width:  200px;
-	height: 200px;
-	margin: 10px 15px 10px 0px;
+.navbar-brand { 
+  padding-top: 25px;
 }
-
-.navbar-brand { padding-top: 25px;}
-.navbar-brand h1 { /* My Name */
+.navbar-brand h1 { 
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
@@ -26,138 +23,47 @@ body { background-color: #2F4F4F; }
   line-height: .75;
   color: white;
 }
-.navbar-brand a:hover, .navbar-brand a:focus { /* Link */ text-decoration: none;}
-.navbar-brand p { /* Laptop Design */
+.navbar-brand p {
   color: white;
-  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #222;
   margin-top: 15px;
-}
-.navbar-brand p span { /* Position */ vertical-align: top; }
-.navbar-brand > a { /* Navigation Icons */
-	text-decoration: none;
-	color:  white;
 }
 
 /* Navigation List Design */
-#nav-list { margin-top: 10px; }
+#nav-list { 
+  margin-top: 20px; 
+}
+
 #nav-list a:hover { 
-	background: black; 
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+	background: #1B1610; 
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
 #nav-list a {
   color: white;
-  text-align: center;
+  /* text-align: center; */
   font-size: 1.0em;
 }
-#collapsable-nav #nav-list .selected {background-color: black;}
 
-/* Email me Design*/
-#email-btn {
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	margin-bottom: 10px;
-}
-#email-btn > a { /* Email Me */
-	font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 1px solid black;
-    background-color: #008080;
-    color: black;
-}
-/* END HEADER STYLE */
-
-
-
-/* START HOME PAGE */
-.container #tiles #resume-tile, .container #tiles #college-tile, .container #tiles #work-tile, .container #tiles #map-tile  {
-	height: 400px;
-	margin:15px 0px 15px 0px;
-	position: relative;
-	overflow: hidden;
-}
-
-#resume-tile:hover, #college-tile:hover, #work-tile:hover, #map-tile:hover  {
-	box-shadow: 0 0 50px black;
-}
-
-#resume-tile {
-	background:  url('../images/resume.jpg') no-repeat;
-  background-position: center;
-}
-
-#college-tile {
-	background: url('../images/college.jpg') no-repeat;
-  background-position: center;
-}
-
-#work-tile {
-	background: url('../images/Work.jpg') no-repeat;
-  background-position: center;
-}
-
-#map-tile {
-	background-position: center;
+#collapsable-nav #nav-list .selected {
+  background-color: black;
 }
 
 
-#resume-tile span, #college-tile span, #work-tile span, #-tile span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 2.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
-}
-/* END HOME PAGE */
-
-/* Work Experience and About Me PAGE */
-.about-me-item-name, .work-experience-item-name  {
-  font-size: 1.5em;
-  text-align: right;
-  margin-top: -15px;
-  margin-right: 0px;
-  font-weight: bold;
-  color: black;
-  padding-left: 10px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: white;
-  text-align: center;
+.timeline-item:nth-child(odd) {
+  left: 0;
+  transform: translateX(-10%);
 }
 
-.about-me-item-photo, .work-experience-item-photo {
-  position: relative;
-  border: 1px solid white; 
-  overflow: hidden;
-  padding: 0;
-  margin-right: -15px;
-  margin-left: auto;
-  margin-bottom: 20px;
+.timeline-item:nth-child(even) {
+  left: 50%;
+  transform: translateX(10%);
 }
 
-
-h3.about-me-item-title, h3.work-experience-item-title {
-  margin: 0 0 10px;
-}
-
-.work-experience-item-tile  .work-experience-item-description p {
-  font-size: 16px;
-}
-
-/* About Me */
-
-#main-content {color: white;}
 
 /********** START LARGER DEVICE **********/
 @media (min-width: 1200px) {
-	 /* About Me Page */
-  .about-me-item-pic, .work-experience-item-pic{height:  450px;}
-  /* About Me Page */
+
 }
 /********** END LARGER DEVICE   **********/
 
@@ -166,22 +72,7 @@ h3.about-me-item-title, h3.work-experience-item-title {
 
 /********** START MEDIUM DEVICE **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* Header */
   
-  #me-img {
-    width: 150px;
-    height: 150px;
-    margin: 5px 10px 5px 0;
-  }
-  .navbar-brand h1 { /* My Name */ font-size: 1.25em }
-  .navbar-brand p span { /* Position */ font-size: 0.75em; }
-  #nav-list a {font-size: 0.90em;}
-  
-  /* Header */
-
-  /* About Me Page */
-  .about-me-item-pic, .work-experience-item-pic {height:  400px;}
-  /* About Me Page */
 }
 /********** END MEDIUM DEVICE   **********/
 
@@ -196,12 +87,6 @@ h3.about-me-item-title, h3.work-experience-item-title {
 	
 	/* Header */
 
-  /* About Me Page */
-  
-  .about-me-item-pic, .work-experience-item-pic {height:  350px;}
-  .about-me-item-photo {margin-right: 0px}
-  
-  /* About Me Page */
 }
 /********** END SMALL DEVICE   **********/
 
@@ -215,46 +100,32 @@ h3.about-me-item-title, h3.work-experience-item-title {
     padding-top: 20px;
     height: 80px;
   }
-  .navbar-brand h1 { /* My name */
+  .navbar-brand h1 { 
     padding-top: 10px;
-    font-size: 4vw; /* 1vw = 1% of viewport width */
+    font-size: 4vw; 
   }
 
-  #collapsable-nav a { /* Collapsed nav menu text */
+  #collapsable-nav a {
     font-size: 1.2em;
   }
+
   #collapsable-nav a span { /* Collapsed nav menu glyph */
     font-size: 1em;
     margin-right: 5px;
   }
 
-#email-btn {box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
-#email-btn > a { /* Email Me */
-	font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 1px solid black;
-    background-color: #008080;
-    color: black;
-	}
-  /* Header */
-
-  /* Home Page */
-  .container #tiles #resume-tile, .container #tiles #college-tile,.container #tiles #work-tile, .container #tiles #map-tile    {
-  	height: 300px;
-  	width: 80%;
+  
+  .timeline-item:nth-child(odd) {
+    left: 0;
+    transform: translateX(-3%);
   }
 
-  #tiles {margin-top: 20px;}
-  /* Home Page */
+  .timeline-item:nth-child(even) {
+    left: 50%;
+    transform: translateX(3%);
+  }
 
-  /* About Me Page */
-  
-  .about-me-item-pic, .work-experience-item-pic {height:  300px;}
-  .about-me-item-photo {margin-right: 0px}
-  
-  /* About Me Page */
+
 }
 
 
@@ -262,15 +133,10 @@ h3.about-me-item-title, h3.work-experience-item-title {
 
 
 .section {
-    /* height: 100vh; */
     margin-top: 50px;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     flex-direction: column;
-    /* text-align: center; */
     opacity: 0;
-    /* margin: 10px; */
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }

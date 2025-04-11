@@ -1,7 +1,6 @@
 
 .timeline {
   position: relative;
-  /* padding: 2rem 0; */
 }
 
 .timeline::before {
@@ -23,16 +22,6 @@
   background: #008080;
   border-radius: 10px;
   margin-bottom: 10px;
-}
-
-.timeline-item:nth-child(odd) {
-  left: 0;
-  transform: translateX(-10%);
-}
-
-.timeline-item:nth-child(even) {
-  left: 50%;
-  transform: translateX(10%);
 }
 
 .timeline-dow {
