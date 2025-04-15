@@ -11,4 +11,4 @@ function moveSlide() {
     }, 500);
 }
 
-setInterval(moveSlide, 3000); // Auto-slide every 3 seconds
+setInterval(moveSlide, 2000); // Auto-slide every 3 seconds
